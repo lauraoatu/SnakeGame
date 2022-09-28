@@ -2,6 +2,8 @@
 
 package com.laurik.snake;
 
+import javax.swing.JFrame;
+
 public class Snake {
 
     public static void main(String[] args) {
@@ -10,7 +12,8 @@ public class Snake {
         window.setSize(800, 800); //dimensiunile ferestrei
         window.setVisible(true); // deschidem fereastra 
         window.setTitle("Snake Game");
-        window.moveSnake(100, 100);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         
     }
 }
